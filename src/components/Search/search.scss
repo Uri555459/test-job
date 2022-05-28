@@ -19,4 +19,12 @@
     visibility: visible;
     top: 100%;
   }
+  &::placeholder {
+    transition: all 0.5s ease-in-out;
+  }
+  &:focus {
+    &::placeholder {
+      opacity: 0;
+    }
+  }
 }

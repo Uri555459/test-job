@@ -1,0 +1,11 @@
+.read-more {
+  span {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #202020;
+  }
+  &:hover {
+    opacity: 0.5;
+  }
+}

@@ -7,6 +7,13 @@
 }
 
 @font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  src: local("HelveticaBold"), url("./HelveticaBold.woff2") format("woff2");
+}
+
+@font-face {
   font-family: "Yeseva One";
   font-style: normal;
   font-weight: normal;

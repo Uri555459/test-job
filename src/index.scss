@@ -33,11 +33,7 @@ button {
 a {
   text-decoration: none;
   transition: all 0.3s linear;
-}
-
-.section-title {
-  font-family: "Yeseva One";
-  font-size: 40px;
-  line-height: 40px;
-  color: #202020;
+  &:hover {
+    opacity: 0.5;
+  }
 }

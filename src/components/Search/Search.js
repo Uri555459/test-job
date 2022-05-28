@@ -17,6 +17,7 @@ export const Search = () => {
       </button>
       <input
         className={`search__input ${searchShow ? "active" : ""}`}
+        placeholder="Поиск..."
         type="search"
       />
     </form>
