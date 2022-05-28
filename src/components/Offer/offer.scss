@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   background-color: #202020;
-  height: 100vh;
+  min-height: 100vh;
 }
 .offer__left {
   width: 100%;
@@ -10,7 +10,8 @@
   flex-shrink: 0;
 }
 .offer__right {
-  padding: 40px 100px 40px 80px;
+  padding: 40px 100px 115px 80px;
+  position: relative;
 }
 
 .offer__content {

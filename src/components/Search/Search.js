@@ -11,7 +11,7 @@ export const Search = () => {
   };
 
   return (
-    <form className="search">
+    <form onSubmit={(event) => event.preventDefault()} className="search">
       <button onClick={searchHandler} type="button" className="search__btn">
         <img src="images/search-icon.svg" alt="" />
       </button>

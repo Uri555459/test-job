@@ -1,4 +1,5 @@
 import { Header } from "../Header/Header";
+import { Logo } from "../Logo/Logo";
 
 import "./offer.scss";
 
@@ -25,6 +26,7 @@ export const Offer = () => {
             </p>
           </div>
         </div>
+        <Logo />
       </div>
     </section>
   );
