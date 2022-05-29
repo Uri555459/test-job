@@ -6,6 +6,29 @@ import "./navigation.scss";
 export const Navigation = ({ burgerMenuIcon = true }) => {
   const [menuToggle, setMenuToggle] = useState(false);
 
+  const menuItems = [
+    {
+      id: Math.random(),
+      toAction: "biography",
+      name: "биография",
+    },
+    {
+      id: Math.random(),
+      toAction: "creativity",
+      name: "творчество",
+    },
+    {
+      id: Math.random(),
+      toAction: "pictures",
+      name: "картины",
+    },
+    {
+      id: Math.random(),
+      toAction: "museums",
+      name: "музеи",
+    },
+  ];
+
   const buttonMenuHandler = () => {
     setMenuToggle(!menuToggle);
   };
@@ -13,41 +36,20 @@ export const Navigation = ({ burgerMenuIcon = true }) => {
   return (
     <nav className="nav">
       <ul className={`nav__list ${menuToggle ? "active" : ""}`}>
-        <li>
-          <Link
-            to="biography"
-            smooth={true}
-            duration={1000}
-            className="nav__link"
-          >
-            биография
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="creativity"
-            smooth={true}
-            duration={1000}
-            className="nav__link"
-          >
-            творчество
-          </Link>
-        </li>
-        <li>
-          <Link to="about" smooth={true} duration={1000} className="nav__link">
-            картины
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="museums"
-            smooth={true}
-            duration={1000}
-            className="nav__link"
-          >
-            музеи
-          </Link>
-        </li>
+        {menuItems &&
+          menuItems.map((item) => (
+            <li key={item.id}>
+              <Link
+                onClick={buttonMenuHandler}
+                to={item.toAction}
+                smooth={true}
+                duration={1000}
+                className="nav__link"
+              >
+                {item.name}
+              </Link>
+            </li>
+          ))}
       </ul>
       {burgerMenuIcon ? (
         <button onClick={buttonMenuHandler} className="burger-menu-btn">
