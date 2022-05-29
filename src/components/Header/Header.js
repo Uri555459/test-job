@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <header className="header">
       <Search />
-      <Navigation />
+      <Navigation burgerMenuIcon={true} />
     </header>
   );
 };

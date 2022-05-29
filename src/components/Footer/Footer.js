@@ -7,7 +7,7 @@ export const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer__inner">
-          <Navigation />
+          <Navigation burgerMenuIcon={false} />
           <Social white="white" />
         </div>
       </div>

@@ -4,3 +4,9 @@
   line-height: 40px;
   color: #202020;
 }
+
+@media (max-width: 767px) {
+  .section-title {
+    margin-bottom: 20px;
+  }
+}

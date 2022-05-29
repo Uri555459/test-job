@@ -36,3 +36,32 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (max-width: 767px) {
+  .biography__inner {
+    display: block;
+  }
+  .biography__left {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .biography__inner {
+    display: block;
+  }
+  .biography__info {
+    display: block;
+    span {
+      margin-right: 0;
+    }
+  }
+  .biography__bottm {
+    flex-direction: column-reverse;
+    align-items: baseline;
+    margin-top: 20px;
+  }
+  .social__link {
+    min-width: 84px;
+  }
+}

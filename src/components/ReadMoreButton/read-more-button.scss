@@ -9,3 +9,9 @@
     opacity: 0.5;
   }
 }
+
+@media (max-width: 575px) {
+  .read-more {
+    margin-bottom: 40px;
+  }
+}

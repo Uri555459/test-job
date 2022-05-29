@@ -39,3 +39,9 @@
     }
   }
 }
+
+@media (max-width: 575px) {
+  .social__link {
+    min-width: 84px;
+  }
+}

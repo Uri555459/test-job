@@ -7,9 +7,10 @@ export const Offer = () => {
   return (
     <section className="offer">
       <div className="offer__left">
-        <div className="offer__img">
-          <img src="/images/offer/offer.jpg" alt="Offer images" />
-        </div>
+        <div
+          className="offer__img"
+          style={{ backgroundImage: "url(images/offer/offer.jpg)" }}
+        ></div>
       </div>
 
       <div className="offer__right">
