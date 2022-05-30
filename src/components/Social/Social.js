@@ -1,6 +1,6 @@
 import './social.scss'
 
-export const Social = ({ white = '' }) => {
+export const Social = ({ white = '', newPage = '' }) => {
   return (
     <div className={`social ${white !== '' ? 'social-white' : ''}`}>
       <a className='social__link' target='_blank' href='/'>

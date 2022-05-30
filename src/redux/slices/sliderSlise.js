@@ -55,6 +55,4 @@ export const sliderSlice = createSlice({
   },
 })
 
-export const {} = sliderSlice.actions
-
 export default sliderSlice.reducer

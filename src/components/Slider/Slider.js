@@ -103,6 +103,32 @@ export const Slider = ({ slides }) => {
                     />
                   </a>
                 )}
+
+                {current !== 0 ? (
+                  <div
+                    className='slide__left-mobile'
+                    style={current === 0 ? { display: 'none' } : null}
+                  >
+                    <img
+                      className='image'
+                      src={slides[current - 1]?.image}
+                      alt=''
+                    />
+                  </div>
+                ) : null}
+
+                {current !== length - 1 ? (
+                  <div
+                    className='slide__right-mobile'
+                    style={current === length - 1 ? { display: 'none' } : null}
+                  >
+                    <img
+                      className='image'
+                      src={slides[current + 1]?.image}
+                      alt=''
+                    />
+                  </div>
+                ) : null}
               </div>
             )
           })}
