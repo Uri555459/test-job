@@ -7,6 +7,8 @@ export const Slider = ({ slides }) => {
   const [current, setCurrent] = useState(0)
   const length = slides.length
   const [offset, setOffset] = useState(0)
+  let startTouch = null
+  let endTouch = null
 
   const slideHandler = (event) => {
     const currentIndex = Number(event.target.dataset.index)
@@ -24,6 +26,18 @@ export const Slider = ({ slides }) => {
     if (current === 0) return null
     setCurrent(current === 0 ? length - 1 : current - 1)
     setOffset(offset - 160)
+  }
+
+  const touchStart = (event) => {
+    startTouch = event.changedTouches[0].clientX
+  }
+  const touchEnd = (event) => {
+    endTouch = event.changedTouches[0].clientX
+    if (startTouch > endTouch) {
+      nextSlide()
+    } else {
+      prevSlide()
+    }
   }
 
   if (!Array.isArray(slides) || slides.length <= 0) {
@@ -81,7 +95,13 @@ export const Slider = ({ slides }) => {
               >
                 {index === current && (
                   <a href='/'>
-                    <img src={slide.image} alt='travel' className='image' />
+                    <img
+                      src={slide.image}
+                      alt='travel'
+                      className='image'
+                      onTouchStart={touchStart}
+                      onTouchEnd={touchEnd}
+                    />
                   </a>
                 )}
               </div>
