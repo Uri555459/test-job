@@ -3,54 +3,44 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
   value: [
     {
-      image:
-        'https://images.unsplash.com/photo-1546768292-fb12f6c92568?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-      title: 'Осень в провинции. Чаепитие',
+      image: 'images/pictures/1.jpg',
+      title: 'Картина 1',
     },
     {
-      image:
-        'https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80',
-      title: 'Осень в провинции.',
+      image: 'images/pictures/2.jpg',
+      title: 'Картина 2',
     },
     {
-      image:
-        'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
-      title: 'Чаепитие',
+      image: 'images/pictures/3.jpg',
+      title: 'Картина 3',
     },
     {
-      image:
-        'https://images.unsplash.com/photo-1475189778702-5ec9941484ae?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80',
-      title: 'Осень в провинции. Чаепитие',
+      image: 'images/pictures/4.jpg',
+      title: 'Картина 4',
     },
     {
-      image:
-        'https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
-      title: 'Осень в провинции',
+      image: 'images/pictures/5.jpg',
+      title: 'Картина 5',
     },
     {
-      image:
-        'https://images.unsplash.com/photo-1546768292-fb12f6c92568?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-      title: 'Осень в провинции. Чаепитие',
+      image: 'images/pictures/6.jpg',
+      title: 'Картина 6',
     },
     {
-      image:
-        'https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80',
-      title: 'Осень в провинции.',
+      image: 'images/pictures/7.jpg',
+      title: 'Картина 7',
     },
     {
-      image:
-        'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
-      title: 'Чаепитие',
+      image: 'images/pictures/8.jpg',
+      title: 'Картина 8',
     },
     {
-      image:
-        'https://images.unsplash.com/photo-1475189778702-5ec9941484ae?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80',
-      title: 'Осень в провинции. Чаепитие',
+      image: 'images/pictures/9.jpg',
+      title: 'Картина 9',
     },
     {
-      image:
-        'https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
-      title: 'Осень в провинции',
+      image: 'images/pictures/10.jpg',
+      title: 'Картина 10',
     },
   ],
 }
