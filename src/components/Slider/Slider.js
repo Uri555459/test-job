@@ -68,6 +68,10 @@ export const Slider = ({ slides }) => {
           </a>
         </div>
 
+        <div className='slider__title slider__title--mobile'>
+          {slides[current].title}
+        </div>
+
         <div className='slider__body'>
           {SliderData.map((slide, index) => {
             return (
@@ -111,6 +115,10 @@ export const Slider = ({ slides }) => {
             alt=''
             disabled={current === length - 1 ? true : false}
           />
+
+          <a href='/' className='slider__top-link slider__top-link--mobile'>
+            все картины &gt;
+          </a>
         </div>
       </div>
     </section>
