@@ -4,17 +4,18 @@ import { Creativity } from './components/Creativity/Creativity'
 import { Museums } from './components/Museums/Museums'
 import { Footer } from './components/Footer/Footer'
 import { Slider } from './components/Slider/Slider'
-
-import { SliderData } from './components/Slider/SliderData'
+import { useSelector } from 'react-redux'
 
 import './App.scss'
 
 function App() {
+  const slides = useSelector((state) => state.slider.value)
+
   return (
     <div className='App'>
       <Offer />
       <Biography />
-      <Slider slides={SliderData} />
+      <Slider slides={slides} />
       <Creativity />
       <Museums />
       <Footer />

@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { SliderData } from './SliderData'
 
 import './slider.scss'
 
@@ -53,7 +52,7 @@ export const Slider = ({ slides }) => {
               className='slider__prev'
               style={{ transform: `translateX(-${offset}px)` }}
             >
-              {SliderData.map((slide, index) => {
+              {slides.map((slide, index) => {
                 return (
                   <div
                     className={
@@ -87,7 +86,7 @@ export const Slider = ({ slides }) => {
         </div>
 
         <div className='slider__body'>
-          {SliderData.map((slide, index) => {
+          {slides.map((slide, index) => {
             return (
               <div
                 className={index === current ? 'slide active' : 'slide'}
