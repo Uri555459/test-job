@@ -64,6 +64,9 @@
 }
 
 @media (max-width: 767px) {
+  .creativity {
+    padding: 40px 0 0;
+  }
   .creativity__row {
     &-1 {
       display: block;
@@ -77,6 +80,9 @@
         margin-right: 40px;
       }
     }
+  }
+  .creativity__bottom {
+    padding-bottom: 40px;
   }
 }
 

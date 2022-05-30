@@ -31,7 +31,7 @@ export const Slider = ({ slides }) => {
   }
 
   return (
-    <section className='slider'>
+    <section className='slider' id='pictures'>
       <div className='container'>
         <div className='slider__top'>
           <div className='slider__top-inner'>
@@ -52,7 +52,7 @@ export const Slider = ({ slides }) => {
                     <img
                       onClick={slideHandler}
                       src={slide.image}
-                      alt='travel image'
+                      alt='travel'
                       className='slider__prev-img'
                       data-index={index}
                       disabled={index === current ? true : false}
@@ -81,11 +81,7 @@ export const Slider = ({ slides }) => {
               >
                 {index === current && (
                   <a href='/'>
-                    <img
-                      src={slide.image}
-                      alt='travel image'
-                      className='image'
-                    />
+                    <img src={slide.image} alt='travel' className='image' />
                   </a>
                 )}
               </div>

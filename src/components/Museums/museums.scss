@@ -55,6 +55,9 @@
 }
 
 @media (max-width: 767px) {
+  .museums {
+    padding-bottom: 40px;
+  }
   .museums__address {
     &:not(:last-child) {
       margin-right: 20px;
