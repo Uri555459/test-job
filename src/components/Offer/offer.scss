@@ -32,7 +32,7 @@
 }
 
 .offer__date {
-  font-family: "Yeseva One";
+  font-family: 'Yeseva One';
   font-size: 64px;
   line-height: 1;
   color: #f5f5f5;
@@ -45,7 +45,7 @@
 .offer__text {
 }
 .offer__title {
-  font-family: "Yeseva One";
+  font-family: 'Yeseva One';
   font-style: normal;
   font-weight: 400;
   font-size: 80px;
@@ -54,7 +54,7 @@
   margin-bottom: 30px;
 }
 .offer__desc {
-  font-family: "Helvetica";
+  font-family: 'Helvetica';
   font-size: 16px;
   line-height: 29px;
   color: #f5f5f5;
@@ -73,21 +73,6 @@
 }
 
 @media (max-width: 767px) {
-  .offer__content {
-    display: block;
-  }
-  .offer__date {
-    font-size: 20px;
-    writing-mode: inherit;
-    transform: none;
-    margin-bottom: 20px;
-  }
-  .offer__title {
-    font-size: 40px;
-  }
-}
-
-@media (max-width: 575px) {
   .offer {
     flex-direction: column-reverse;
     min-height: auto;
@@ -102,7 +87,22 @@
     padding-bottom: 40%;
   }
   .offer__content {
+    display: block;
     margin-top: 8vh;
+  }
+  .offer__date {
+    font-size: 20px;
+    writing-mode: inherit;
+    transform: none;
+    margin-bottom: 20px;
+  }
+  .offer__title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .offer__content {
     margin-bottom: 0;
   }
   .logo {

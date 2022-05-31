@@ -1,3 +1,4 @@
+import { Map } from '../Map/Map'
 import { SectionTitle } from '../SectionTitle/SectionTitle'
 import './museums.scss'
 
@@ -10,9 +11,7 @@ export const Museums = () => {
     <section className='museums' id='museums'>
       <div className='container container--museums'>
         <SectionTitle>музеи</SectionTitle>
-        <div className='museums__map'>
-          <img src='images/museums/1.jpg' alt='' />
-        </div>
+        <Map />
         <div className='museums__address-wrap'>
           {museums &&
             museums.map((item) => (

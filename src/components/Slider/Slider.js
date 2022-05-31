@@ -37,6 +37,8 @@ export const Slider = ({ slides }) => {
     } else {
       prevSlide()
     }
+    startTouch = null
+    endTouch = null
   }
 
   if (!Array.isArray(slides) || slides.length <= 0) {
