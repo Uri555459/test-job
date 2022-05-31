@@ -1,0 +1,31 @@
+{
+  "socialData": [
+    {
+      "id": "111",
+      "link": "https://vk.com",
+      "share": "https://vk.com/share.php",
+      "target": true,
+      "imageDark": "images/vk.svg",
+      "imageWhite": "images/vk-white.svg",
+      "fork": 105
+    },
+    {
+      "id": "222",
+      "link": "https://twitter.com",
+      "share": "https://twitter.com/intent/tweet",
+      "target": true,
+      "imageDark": "images/twit.svg",
+      "imageWhite": "images/twit-white.svg",
+      "fork": 96
+    },
+    {
+      "id": "333",
+      "link": "https://facebook.com",
+      "share": "https://www.facebook.com/sharer/sharer.php",
+      "target": true,
+      "imageDark": "images/fb.svg",
+      "imageWhite": "images/fb-white.svg",
+      "fork": ""
+    }
+  ]
+}

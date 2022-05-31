@@ -1,7 +1,11 @@
 import { SectionTitle } from '../SectionTitle/SectionTitle'
 import './museums.scss'
 
+import data from './museumsDB.json'
+
 export const Museums = () => {
+  const museums = data.museums
+
   return (
     <section className='museums' id='museums'>
       <div className='container container--museums'>
@@ -10,44 +14,23 @@ export const Museums = () => {
           <img src='images/museums/1.jpg' alt='' />
         </div>
         <div className='museums__address-wrap'>
-          <div className='museums__address'>
-            <div className='museums__address-top'>
-              <img src='images/mark.svg' alt='' />
-              <a href='/'>
-                <h4>Русский музей</h4>
-              </a>
-            </div>
-            <p>
-              191186, Санкт-Петербург, Инженерная ул., 4,{' '}
-              <a href='tel:+78125954240'>+7 (812) 595-42-40</a>
-            </p>
-          </div>
-
-          <div className='museums__address'>
-            <div className='museums__address-top'>
-              <img src='images/mark.svg' alt='' />
-              <a href='/'>
-                <h4>Третьяковская галерея</h4>
-              </a>
-            </div>
-            <p>
-              119017, Москва, Лаврушинский переулок,10
-              <a href='tel:+74959570727'>+7 (495) 957-07-27</a>
-            </p>
-          </div>
-
-          <div className='museums__address'>
-            <div className='museums__address-top'>
-              <img src='images/mark.svg' alt='' />
-              <a href='/'>
-                <h4>Мультимедиа Арт Музей</h4>
-              </a>
-            </div>
-            <p>
-              105064, Москва, Гороховский переулок, 7
-              <a href='tel:+74956321681'>+7 (495) 632–16–81</a>
-            </p>
-          </div>
+          {museums &&
+            museums.map((item) => (
+              <div className='museums__address' key={item.id}>
+                <div className='museums__address-top'>
+                  <img src={item.icons} alt='' />
+                  <a href='/'>
+                    <h4>{item.title}</h4>
+                  </a>
+                </div>
+                <p>
+                  {item.address}
+                  <a href={`tel:${item.phone.replace(/[-()/\\' ']/g, '')}`}>
+                    {item.phone}
+                  </a>
+                </p>
+              </div>
+            ))}
         </div>
       </div>
     </section>

@@ -65,7 +65,7 @@ export const Biography = () => {
         </div>
 
         <div className='biography__bottm'>
-          <Social />
+          <Social white={false} newPage={false} share={true} />
           <ReadMoreButton
             buttonText={buttonText}
             readMoreHandler={readMoreHandler}
