@@ -1,41 +1,41 @@
-import { useState } from "react";
-import { Link } from "react-scroll";
+import { useState } from 'react'
+import { Link } from 'react-scroll'
 
-import "./navigation.scss";
+import './navigation.scss'
 
 export const Navigation = ({ burgerMenuIcon = true }) => {
-  const [menuToggle, setMenuToggle] = useState(false);
+  const [menuToggle, setMenuToggle] = useState(false)
 
   const menuItems = [
     {
       id: Math.random(),
-      toAction: "biography",
-      name: "биография",
+      toAction: 'biography',
+      name: 'биография',
     },
     {
       id: Math.random(),
-      toAction: "creativity",
-      name: "творчество",
+      toAction: 'creativity',
+      name: 'творчество',
     },
     {
       id: Math.random(),
-      toAction: "pictures",
-      name: "картины",
+      toAction: 'pictures',
+      name: 'картины',
     },
     {
       id: Math.random(),
-      toAction: "museums",
-      name: "музеи",
+      toAction: 'museums',
+      name: 'музеи',
     },
-  ];
+  ]
 
   const buttonMenuHandler = () => {
-    setMenuToggle(!menuToggle);
-  };
+    setMenuToggle(!menuToggle)
+  }
 
   return (
-    <nav className="nav">
-      <ul className={`nav__list ${menuToggle ? "active" : ""}`}>
+    <nav className='nav'>
+      <ul className={`nav__list ${menuToggle ? 'active' : ''}`}>
         {menuItems &&
           menuItems.map((item) => (
             <li key={item.id}>
@@ -44,7 +44,7 @@ export const Navigation = ({ burgerMenuIcon = true }) => {
                 to={item.toAction}
                 smooth={true}
                 duration={1000}
-                className="nav__link"
+                className='nav__link'
               >
                 {item.name}
               </Link>
@@ -52,10 +52,10 @@ export const Navigation = ({ burgerMenuIcon = true }) => {
           ))}
       </ul>
       {burgerMenuIcon ? (
-        <button onClick={buttonMenuHandler} className="burger-menu-btn">
-          <img src="images/burger-menu-icon.svg" alt="" />
+        <button onClick={buttonMenuHandler} className='burger-menu-btn'>
+          <img src='images/burger-menu-icon.svg' alt='' />
         </button>
       ) : null}
     </nav>
-  );
-};
+  )
+}
